@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #F3F5FC;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.right-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    margin: 20px 20px 20px 0;
+    background: white;
+}
+.mensaje{
+    background-image: url("./Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+.mensaje:focus{
+    outline: none;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 336px;
+    height: 122px;
+}
+.texto1{
+    font-weight: bold;
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.logo{
+    width: 120px;
+    height: 48px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.textarea{
+    width: 500px;
+    height: 300px;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    background-color: #F3F5FC;
+    color: darkblue;
+}
+.textarea::placeholder {
+    font-size: 32px;
+    color: darkblue;
+  }
+  .buttons{
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .buttons button {
+    padding: 10px 20px;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    color: blue;
+    border: none;
+    border-radius: 24px;
+    border: solid 1px #234774;
+    cursor: pointer;
+}
+button:focus {
+    background-color: darkblue;
+    color: white;
+}
+.botones{
+    display: flex;
+    gap: 24px;
+}
+.note{
+    color: gray;
+}
+.btn-copiar{
+    padding: 10px 20px;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    color: blue;
+    border: none;
+    border-radius: 24px;
+    border: solid 1px #234774;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .mensaje{
+        background-image: none;
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .mensaje{
+        background-image: none;
+        display: none;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+    }
+}
