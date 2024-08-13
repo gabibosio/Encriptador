@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,12 +10,13 @@ body {
     background-color: #F3F5FC;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.right-panel{
+
+.right-panel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,31 +25,49 @@ body {
     margin: 20px 20px 20px 0;
     background: white;
 }
-.mensaje{
+
+.mensaje {
     background-image: url("./Muñeco.png");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
 }
-.mensaje:focus{
+
+.mensaje:focus {
     outline: none;
 }
-.texto{
+
+.texto {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 336px;
     height: 122px;
+    gap: 16px;
 }
-.texto1{
-    font-weight: bold;
-    font-size: 25px;
+
+.texto1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-.left-panel{
+
+.texto2 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #495057;
+}
+
+.left-panel {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,72 +75,85 @@ body {
     margin-bottom: 50px;
     margin-top: 100px;
 }
-.logo{
+
+.logo {
     width: 120px;
     height: 48px;
     margin-left: 40px;
     margin-top: 40px;
 }
-.textarea{
+
+.textarea {
     width: 500px;
     height: 300px;
     border: none;
     outline: none;
     font-size: 32px;
     background-color: #F3F5FC;
-    color: darkblue;
+    color: #0A3871;
 }
+
 .textarea::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
     font-size: 32px;
-    color: darkblue;
-  }
-  .buttons{
+    line-height: 48px;
+    color: #0A3871;
+}
+
+.buttons {
     width: 680px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-  }
-  .buttons button {
-    padding: 10px 20px;
+    gap: 8px;
+}
+
+.buttons button {
+    padding: 24px;
     width: 328px;
     height: 67px;
     font-size: 16px;
-    color: blue;
+    color: #0A3871;
     border: none;
     border-radius: 24px;
-    border: solid 1px #234774;
+    border: solid 1px #0A3871;
     cursor: pointer;
 }
+
 button:focus {
-    background-color: darkblue;
+    background-color: #0A3871;
     color: white;
 }
-.botones{
+
+.botones {
     display: flex;
     gap: 24px;
 }
-.note{
+
+.note {
     color: gray;
 }
-.btn-copiar{
+
+.btn-copiar {
     padding: 10px 20px;
     width: 328px;
     height: 67px;
     font-size: 16px;
-    color: blue;
+    color: #0A3871;
     border: none;
     border-radius: 24px;
-    border: solid 1px #234774;
+    border: solid 1px #0A3871;
     cursor: pointer;
     display: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
     }
-    .mensaje{
+
+    .mensaje {
         background-image: none;
         display: none;
     }
@@ -129,15 +161,17 @@ button:focus {
 
 
 @media screen and (max-width: 767px) {
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
     }
-    .mensaje{
+
+    .mensaje {
         background-image: none;
         display: none;
     }
-    .botones{
+
+    .botones {
         display: flex;
         flex-direction: column;
     }
